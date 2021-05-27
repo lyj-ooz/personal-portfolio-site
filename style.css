@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Noto+Serif+KR:wght@200;400&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Noto+Serif+KR:wght@200;400&family=Raleway+Dots&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Nixie+One&family=Noto+Serif+KR:wght@200;400&family=Raleway+Dots&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+
+:root {
+  --cover-title-font-size: 6.5rem;
+  --cover-title-font-family: "Libre Barcode 39 Text", cursive;
+  --cover-btn-font-family: "Nixie One", cursive;
+  --paragraph-font-family: "Noto Serif KR", serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: linear-gradient(-45deg, #4b4b4b, #424242, #242424, #1b1b1b);
+  background-size: 400% 400%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* animation: gradient 10s ease infinite; */
+  /* -webkit-animation: gradient 10s ease infinite; */
+  /* -moz-animation: gradient 10s ease infinite; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cover-title {
+  font-family: var(--cover-title-font-family);
+  font-size: var(--cover-title-font-size);
+  margin-bottom: 0.4em;
+  color: #eee;
+}
+
+.cover-paragraph {
+  width: 75vw;
+  max-width: 790px;
+  font-family: var(--paragraph-font-family);
+  font-size: 1rem;
+  margin-bottom: 2em;
+  color: #eee;
+}
+
+.cover-btn {
+  border: 1px solid turquoise;
+  font-family: var(--cover-btn-font-family);
+  font-size: 0.9rem;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-right: 2.1em;
+  padding-left: 2.1em;
+  color: turquoise;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.cover-btn:hover {
+  padding-left: 1.1em;
+  padding-right: 3.1em;
+  transition: 0.5s ease-in-out;
+}
+
+.cover-btn::after {
+  content: "\27F6";
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.cover-btn:hover::after {
+  opacity: 1;
+  right: 15px;
+}
