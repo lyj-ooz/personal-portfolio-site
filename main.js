@@ -5,4 +5,8 @@ coverBtn.addEventListener("click", removeCover);
 
 function removeCover() {
   cover.style.opacity = "0";
+
+  setTimeout(() => {
+    cover.remove();
+  }, 1000);
 }
