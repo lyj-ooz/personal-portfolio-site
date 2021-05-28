@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="icon" type="image/ico" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/ico" href="./assets/favicon.ico" />
     <!-- <link rel="icon" type="image/ico" href="http://example.com/assets/favicon.ico"/> -->
-    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <!-- <link rel="icon" type="image/png" href="http://example.com/assets/favicon.png"/> -->
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b7ad602252.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="cover">
@@ -24,11 +28,33 @@
 
     <main class="home">
       <header class="home-header">
-        <h1>이유진</h1>
-        <p>어쩌구저ㄱ쩌구 개발자</p>
-        <div class="sns">
-          <a href="#">github</a>
-          <a href="#">blog</a>
+        <div class="home-header-profile">
+          <img src="./assets/profile.JPG" alt="profile" />
+        </div>
+        <div class="home-header-info">
+          <h1>이유진</h1>
+          <p>
+            안녕하세요! <br />
+            깔끔한 UI를 좋아하는 신입 프론트엔드 개발자입니다.
+          </p>
+          <div class="home-header-info-link">
+            <a
+              href="https://github.com/lyj-ooz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+              Github
+            </a>
+            <a
+              href="https://velog.io/@lyj-ooz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-link"></i>
+              Blog
+            </a>
+          </div>
         </div>
       </header>
 
