@@ -259,7 +259,7 @@ nav.cover {
 .portfolio-content .links a {
   border: 1px solid #40e0d0;
   font-family: var(--cover-btn-font-family);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   padding-right: 2.1em;
@@ -316,6 +316,6 @@ nav.cover {
 
 @media screen and (min-width: 1300px) {
   .home {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
   }
 }
